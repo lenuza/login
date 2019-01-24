@@ -1,33 +1,43 @@
-body {
+html, body {
+  box-sizing: border-box;
+  color: #333;
+  height: 95vh;
+  font-family: Arial, sans-serif;
+}
 
-    box-sizing: border-box;
-    color: #333;
-    font-family: Arial, sans-serif;
-}
 .container {
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95vh;
+  margin: 0 auto;
 }
+
 header, nav {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
+
 ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
 }
+
 ul li {
-    margin-left: 10px;
+  margin-left: 10px;
 }
+
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: 0 auto;
 }
+
 form {
   border: 2px solid #ddd;
   border-top: 10px solid #4dc0b5;
@@ -36,17 +46,22 @@ form {
   margin: 10px auto;
   padding: 20px;
   line-height: 1.6;
-
 }
+
 input {
-  height: 20px;
+  color: #999;
+  font-weight: bold;
+  height: 25px;
   width: 90%;
   padding: 0 10px;
+  border-radius: 2px;
 }
+
 div {
-    justify-content: space-between;
-    margin-top: 10px;
+  justify-content: space-between;
+  margin-top: 10px;
 }
+
 button {
   background-color: #38a89d;
   border-radius: 4px;
@@ -55,18 +70,23 @@ button {
   width: 80px;
   height: 30px;
 }
+
 button:hover {
   background-color: #4dc0b5;
 }
+
 a {
   color: #3490dc;
   float: right;
   text-decoration: none;
 }
+
 a:hover {
   color: #2779bd;
 }
+
 footer {
+  align-self: flex-end;
   display: flex;
   justify-content: center;
   width: 90%;
